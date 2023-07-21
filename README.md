@@ -18,9 +18,13 @@ RomanYurkhanov Modal Extension for Magento 2,
 
 ## Extension Screenshots
 <img width="1790" alt="RomanYurkhanov_Modal_1" src="https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-modal/assets/14273213/c6602235-f779-474d-b785-a0363483d1e6">
+
 <img width="1792" alt="RomanYurkhanov_Modal_2" src="https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-modal/assets/14273213/62fe27bd-3ae0-4781-9bef-bf926bcc0b73">
+
 <img width="1792" alt="RomanYurkhanov_Modal_3" src="https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-modal/assets/14273213/a44a323a-1fb4-4c47-b6a2-64d8c4ad4c39">
-![RomanYurkhanov_Modal_4](https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-modal/assets/14273213/fc0d74db-c4a2-4e7d-8c9c-f3f68ad505de)
+
+![RomanYurkhanov_Modal_4](https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-modal/assets/14273213/b5bb52e1-3bf7-4f6b-b9de-846c919d0efc)
+
 
 ## How to install & upgrade RomanYurkhanov_Modal
 
