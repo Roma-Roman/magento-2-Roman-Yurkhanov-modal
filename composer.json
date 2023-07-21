@@ -1,0 +1,28 @@
+{
+  "name": "romanyurkhanov/module-modal",
+  "description": "RomanYurkhanov Modal module for Magento 2.",
+    "require": {
+        "romanyurkhanov/module-base": "^1.0.0"
+    },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "proprietary"
+  ],
+  "authors": [
+    {
+      "name": "Roman Yurkhanov",
+      "email": "ferrumdp@gmail.com",
+      "homepage": "https://www.linkedin.com/in/roman-yurkhanov-322035122/",
+      "role": "Technical Support"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "RomanYurkhanov\\Modal\\": ""
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+    /**
+    * Roman Yurkhanov
+    *
+    * Email :: ferrumdp@gmail.com
+    * Linkedin :: https://www.linkedin.com/in/roman-yurkhanov-322035122/
+    *
+    * Copyright 2023-present Roman Yurkhanov. All rights reserved.
+    * See license.txt for license details.
+    */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="romanyurkhanov_modal" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Modal</label>
+            <tab>romanyurkhanov</tab>
+            <class>item-icon-tab frontend</class>
+            <resource>RomanYurkhanov_Modal::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>General</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Select <b>Yes</b> to enable this module.<br />
+                        1. It helps to increase sales a lot 💰💰💰 <br />
+                        2. For more info <a href="https://www.linkedin.com/in/roman-yurkhanov-322035122/" title="contact the author" target="_blank">contact the author</a>]]></comment>
+                </field>
+                <field id="modal_timeout" translate="label comment" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Modal timeout</label>
+                    <comment><![CDATA[Show modal window after some time (milliseconds) <br /> Example: <br /> 3000]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="modal_logo_src" translate="label comment" type="image" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Modal logo</label>
+                    <backend_model>RomanYurkhanov\Modal\Model\Config\Backend\Image\Logo</backend_model>
+                    <base_url type="media" scope_info="1">romanyurkhanov/modal/modal_logo</base_url>
+                    <comment>
+                        <![CDATA[Logo will be used in modal header section <br /> Allowed file types: PNG, GIF, JPG, JPEG, SVG.]]>
+                    </comment>
+                </field>
+                <field id="modal_title" translate="label comment" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Modal title</label>
+                    <comment><![CDATA[Example: <br /> Special Deals]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="modal_message" translate="label comment" type="textarea" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Modal message</label>
+                    <comment><![CDATA[Example: <br /> Hurry up and buy the most popular products at a special price! <br /> Only 3 days left before the end of the special deals!]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="modal_cta_title" translate="label comment" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Modal CTA title</label>
+                    <comment><![CDATA[Example: <br /> View deals]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="modal_cta_url" translate="label comment" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Modal CTA url</label>
+                    <comment><![CDATA[Example: <br /> specials-deals]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

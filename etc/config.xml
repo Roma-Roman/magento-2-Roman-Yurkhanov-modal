@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+    /**
+    * Roman Yurkhanov
+    *
+    * Email :: ferrumdp@gmail.com
+    * Linkedin :: https://www.linkedin.com/in/roman-yurkhanov-322035122/
+    *
+    * Copyright 2023-present Roman Yurkhanov. All rights reserved.
+    * See license.txt for license details.
+    */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <romanyurkhanov_modal>
+            <general>
+                <enabled>0</enabled>
+                <modal_timeout>3000</modal_timeout>
+                <modal_logo_src></modal_logo_src>
+                <modal_title>Special Deals</modal_title>
+                <modal_message><![CDATA[Hurry up and buy the most popular products at a special price! <br /> Only 3 days left before the end of the special deals!]]></modal_message>
+                <modal_cta_title>View deals</modal_cta_title>
+                <modal_cta_url>specials-deals</modal_cta_url>
+            </general>
+        </romanyurkhanov_modal>
+    </default>
+</config>

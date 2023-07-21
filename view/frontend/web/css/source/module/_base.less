@@ -1,0 +1,148 @@
+/**
+ * Roman Yurkhanov
+ *
+ * Email :: ferrumdp@gmail.com
+ * Linkedin :: https://www.linkedin.com/in/roman-yurkhanov-322035122/
+ *
+ * Copyright 2023-present Roman Yurkhanov. All rights reserved.
+ * See license.txt for license details.
+ */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    #modal-block {
+        display: none;
+    }
+
+    .modal-block {
+        .lib-css(color, @primary__color__text);
+
+        .modal-inner-wrap {
+            max-width: 600px;
+            width: 100%;
+            margin: 10rem auto;
+            border-radius: 4px;
+            .lib-css(transition, transform .5s ease, 1);
+
+            .modal-logo {
+                display: block;
+                max-height: 200px;
+                margin: 0 auto;
+            }
+
+            .modal-title {
+                text-align: center;
+                border-bottom: none;
+                .lib-font-size(26);
+                .lib-line-height(30);
+                font-weight: @font-weight__heavier;
+                margin-bottom: 15px;
+            }
+
+            .modal-content {
+                .lib-font-size(16);
+                .lib-line-height(24);
+                font-weight: @font-weight__light;
+                text-align: center;
+            }
+
+            .modal-footer {
+                border-top: none;
+                text-align: center;
+                .lib-vendor-prefix-display(flex);
+                .lib-vendor-box-align(center);
+                justify-content: center;
+                gap: 12px;
+
+                button {
+                    min-width: 160px;
+                    font-weight: @font-weight__semibold;
+                    border: none;
+                    padding: 14px 10px;
+                    .lib-css(transition, all .15s, 1);
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+
+                    &.button-close-hide {
+                        .lib-css(color, #8e8e8e);
+                    }
+                    &.button-cta {
+                        background: @primary__cta__bg;
+                        .lib-css(color, white);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  ----------------------------------------------
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .modal-block {
+        .modal-inner-wrap {
+            max-width: 600px;
+            width: 100%;
+            margin: 10rem auto;
+            border-radius: 4px;
+
+            .lib-css(transition, transform .5s ease, 1);
+
+            .modal-title {
+                text-align: center;
+                border-bottom: none;
+                font-weight: @font-weight__heavier;
+                margin-bottom: 15px;
+            }
+
+            .modal-content {
+                .lib-font-size(16);
+                .lib-line-height(24);
+                font-weight: @font-weight__light;
+                text-align: center;
+            }
+
+            .modal-footer {
+                border-top: none;
+                text-align: center;
+                .lib-vendor-prefix-display(flex);
+                .lib-vendor-box-align(center);
+                justify-content: center;
+                gap: 12px;
+
+                button {
+                    min-width: 160px;
+                    font-weight: @font-weight__semibold;
+                    border: none;
+                    padding: 14px 10px;
+                    .lib-css(transition, all .15s, 1);
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+
+                    &.button-close-hide {
+                        .lib-css(color, #8e8e8e);
+                    }
+                    &.button-cta {
+                        background: @primary__cta__bg;
+                        .lib-css(color, white);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  ----------------------------------------------
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
