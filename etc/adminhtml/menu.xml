@@ -12,7 +12,7 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="RomanYurkhanov_Modal::modal" title="Roman Yurkhanov" module="RomanYurkhanov_Modal" sortOrder="51" resource="RomanYurkhanov_Modal::modal"/>
-        <add id="RomanYurkhanov_Modal::settings" title="Modal" module="RomanYurkhanov_Modal" sortOrder="10" action="adminhtml/system_config/edit/section/romanyurkhanov_modal" resource="RomanYurkhanov_Modal::settings" parent="RomanYurkhanov_Modal::modal"/>
+        <add id="RomanYurkhanov_Modal::configuration" title="Modal" module="RomanYurkhanov_Modal" sortOrder="10" resource="RomanYurkhanov_Modal::configuration" parent="RomanYurkhanov_Base::menu"/>
+        <add id="RomanYurkhanov_Modal::configuration_item" title="Configuration" module="RomanYurkhanov_Modal" sortOrder="10" action="adminhtml/system_config/edit/section/romanyurkhanov_modal" resource="RomanYurkhanov_Modal::configuration_item" parent="RomanYurkhanov_Modal::configuration"/>
     </menu>
 </config>
